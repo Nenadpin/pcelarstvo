@@ -30,16 +30,19 @@ const selectBee = () => {
     if (details1) {
         menu1.style.height = '480px'
         if (screen.width < 800) {
-            p1.style.fontSize = '14px'
+            p1.style.fontSize = '12px'
         } else p1.style.fontSize = '18px'
-        p1.innerText = data[0] + "\n" + data[1] + "\n" + data[2] + "\n" + "\n" + data[3]
+        p1.innerText = data[0] + "\n" + data[1] + "\n" + data[2] + "\n" + data[3]
         p1.style.textShadow = '0px 0px'
 
     } else {
-        menu1.style.height = '150px'
+        menu1.style.height = '15vh'
         p1.innerText = 'pcelinji proizvodi'
         p1.style.textShadow = '2px 2px dimgray';
-        p1.style.fontSize = '36px';
+        if (screen.width < 800) {
+            p1.style.fontSize = '24px';
+        } else p1.style.fontSize = '36px';
+
     }
 
     details1 = !details1
@@ -48,17 +51,19 @@ const selectQueen = () => {
     if (details2) {
         menu2.style.height = '480px'
         if (screen.width < 800) {
-            p2.style.fontSize = '14px'
+            p2.style.fontSize = '12px'
         } else p2.style.fontSize = '18px'
 
         p2.innerText = data2[0] + "\n" + data2[1] + "\n" + data2[2] + "\n" + "\n" + data2[3]
         p2.style.textShadow = '0px 0px'
 
     } else {
-        menu2.style.height = '150px'
+        menu2.style.height = '15vh'
         p2.innerText = 'rojevi i matice'
         p2.style.textShadow = '2px 2px dimgray';
-        p2.style.fontSize = '36px';
+        if (screen.width < 800) {
+            p2.style.fontSize = '24px';
+        } else p2.style.fontSize = '36px';
     }
 
     details2 = !details2
@@ -66,16 +71,20 @@ const selectQueen = () => {
 const selectDrone = () => {
     if (details3) {
         menu3.style.height = '480px'
-        p3.style.fontSize = '18px'
+        if (screen.width < 800) {
+            p3.style.fontSize = '12px'
+        } else p3.style.fontSize = '18px'
         p3.innerText = data3[0] + "\n" + data3[1] + "\n" + data3[2] + "\n" + "\n" + data3[3]
         p3.style.textShadow = '0px 0px'
         p3.appendChild(temp_link)
 
     } else {
-        menu3.style.height = '150px'
+        menu3.style.height = '15vh'
         p3.innerText = 'informacije o nama'
         p3.style.textShadow = '2px 2px dimgray';
-        p3.style.fontSize = '36px';
+        if (screen.width < 800) {
+            p3.style.fontSize = '24px';
+        } else p3.style.fontSize = '36px';
     }
 
     details3 = !details3

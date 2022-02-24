@@ -27,8 +27,9 @@ main{
     width: 100vw;
 }
 #slider{
-    height:280px;
-    width: 500px;
+    width: 35vw;
+    height: 28vh;
+    min-width: 350px;
     background-image: url('img1.jpg');
     margin-top: 90px;
     border-radius: 15px;
@@ -38,11 +39,11 @@ main{
 .products, .queen,.about{
     display: flex;
     align-items: center;
-    width: 60%;
-    height: 150px;
+    width: 60vw;
+    height: 15vh;
     background-color: white;
     margin-top: 15px;
-    border-radius: 75px;
+    border-radius: 7.5vh;
  
 }
 .container{
@@ -52,9 +53,9 @@ main{
     justify-content: center;
 }
 .btn{
-    height: 145px;
-    width: 150px;
-    border-radius: 75px;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
     border: 2px solid darkgreen;
     box-shadow: 5px 5px;
     margin-left: -5px;
@@ -75,7 +76,15 @@ main{
     text-shadow: 2px 2px dimgray;
 }
 @media only screen and (max-width: 768px){
+    header{
+        font-size: 24px;
+    }
     .menu{
         font-size: 24px;
+        text-shadow: 2px 2px dimgray;
+    }
+    .products,.queen,.about{
+
+        width: 90vw;
     }
 }
