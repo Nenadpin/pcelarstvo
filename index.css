@@ -75,20 +75,7 @@ main {
   padding-left: 25px;
   text-shadow: 2px 2px dimgray;
 }
-@media only screen and (max-width: 768px) {
-  header {
-    font-size: 24px;
-  }
-  .menu {
-    font-size: 24px;
-    text-shadow: 2px 2px dimgray;
-  }
-  .products,
-  .queen,
-  .about {
-    width: 90vw;
-  }
-}
+
 footer {
   display: block;
   margin-bottom: -10px;
@@ -111,4 +98,21 @@ iframe {
   border-radius: 15px;
   top: 10px;
   left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 24px;
+  }
+  .menu {
+    font-size: 24px;
+    text-shadow: 2px 2px dimgray;
+  }
+  .products,
+  .queen,
+  .about {
+    width: 90vw;
+  }
+  iframe {
+    width: 90vw;
+  }
 }
