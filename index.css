@@ -27,10 +27,13 @@ main {
   width: 100vw;
 }
 #slider {
+  display: flex;
+  background-size: cover;
   width: 35vw;
   height: 28vh;
-  min-width: 350px;
+  max-width: 600px;
   background-image: url("img1.jpg");
+  background-repeat: no-repeat;
   margin-top: 90px;
   border-radius: 15px;
   border: 2px solid white;
@@ -81,6 +84,7 @@ footer {
   margin-bottom: -10px;
   height: 25vh;
   width: 100vw;
+  background: rgb(0, 0, 0, 0.45);
 }
 .map {
   position: absolute;
@@ -112,7 +116,7 @@ iframe {
   .about {
     width: 90vw;
   }
-  iframe {
+  iframe, #slider{
     width: 90vw;
   }
 }
