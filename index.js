@@ -16,7 +16,7 @@ let details2 = true
 let details3 = true
 let i = 1
 const data = ["med. Prvo i osnovno. sakupljamo bagremov, livadski i sumski med. bagredmov med se sakuplja od pocetka maja do polovine maja. zatim dozreva do pocetka juna kada se i vrca. prve ture su spremne za isporuku krajem juna.",
-    "livadski med se sakuplja tokom celog leta. manje ga je i staramo se da je cist i bez ostataka (ne vrcaju se ramovi u kojima je bilo leglo.", "Sumski med se javlja svake 3 ili 4 godine. jakog je ukuca i mirisa i brzo kristalise ali je izuzetno zdrav.", "takodje sakupljamo polen i vosak iz kosnica."]
+    "livadski med se sakuplja tokom celog leta. manje ga je i staramo se da je cist i bez ostataka (ne vrcaju se ramovi u kojima je bilo leglo.", "Sumski med se javlja svake 3 ili 4 godine. jakog je ukusa i mirisa i brzo kristalise ali je izuzetno zdrav.", "takodje sakupljamo polen i vosak iz kosnica."]
 const data2 = ["matice se proizvode nikot aparatom.", "proizvodnja matica je po metodi michael palmera upotrebom pomocnih nukleusa za leglo. nukleusi zimuju i provode citavu godinu kao nukleusi. ne postaju proizvodne kosnice vec samo sluze za proizvodnju legla za starter kosnice.", "matice se odgajaju u posebnim oplodnjacima i nako 28 dana su spremne za prodaju", "rojevi mogu da se dobiju u svim formatima (db, LR i farar) sa odgovarajucom kolicinom ramova"]
 const data3 = ["novoformirani pcelinjak i poljoprivredno gazdinstvo", "nalazimo se u zaplanjskoj dolini ispod suve planine", "raspolazemo sa 50-tak drustava i jos toliko nukleusa", "jedan interesantan program za evidenciju pregleda kosnica mozete naci na adresi:  "]
 
