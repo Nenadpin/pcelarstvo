@@ -54,7 +54,7 @@ main {
   border-radius: 7.5vh;
 }
 #order {
-  height: 59vh;
+  height: 575px;
   width: 60vw;
   background-color: #e6e6e6;
   margin-top: 5px;
@@ -175,7 +175,6 @@ iframe {
   .about,
   #order {
     width: 90vw;
-    height: 59vh;
   }
   .orderForm button {
     width: 45vw;
