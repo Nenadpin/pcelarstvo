@@ -176,6 +176,9 @@ iframe {
   #order {
     width: 90vw;
   }
+  .orderForm button {
+    width: 45vw;
+  }
   iframe,
   #slider {
     width: 90vw;
