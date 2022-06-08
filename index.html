@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pcelarstvo PIN</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <span>PIN</span>
-        Pcelarstvo Stamenkovic
-        <span>064 1227779</span>
+      <img id="orderBtn" src="buy.png" onclick="orderProduct()" />
+      Pcelarstvo Stamenkovic
+      <span><a href="tel:0641227779">064 1227779</a></span>
     </header>
     <main>
-        <div class="container">
-            <div id="slider"></div>
-            <div id='1' class="products">
-                <img class='btn' src='bee.jpg' onclick="selectBee()">
-                <p id='p1' class="menu">Pcelinji proizvodi</p>
-            </div>
-            <div id='2' class="queen">
-                <img class="btn" src='queen.jpg' onclick="selectQueen()">
-                <p id='p2' class="menu">Rojevi i matice</p>
-            </div>
-            <div id='3' class="about">
-                <img class="btn" src='Drone.jpg' onclick="selectDrone()">
-                <p id='p3' class="menu">Informacije o nama</p>
-            </div>
+      <div class="container">
+        <div id="slider"></div>
+        <div id="start">
+          <div id="1" class="products">
+            <img class="btn" src="bee.jpg" onclick="selectBee()" />
+            <p id="p1" class="menu">Pcelinji proizvodi</p>
+          </div>
+          <div id="2" class="queen">
+            <img class="btn" src="queen.jpg" onclick="selectQueen()" />
+            <p id="p2" class="menu">Rojevi i matice</p>
+          </div>
+          <div id="3" class="about">
+            <img class="btn" src="Drone.jpg" onclick="selectDrone()" />
+            <p id="p3" class="menu">Informacije o nama</p>
+          </div>
         </div>
-
+        <div id="order">
+          <h2>Porudzbina proizvoda</h2>
+          <form onsubmit="return false" name="orderID" class="orderForm">
+            <label>Ime i prezime:</label>
+            <input
+              name="custName"
+              id="custName"
+              type="text"
+              required
+              placeholder="Vase ime..."
+            />
+            <label>e-mail adresa:</label>
+            <input
+              name="custMail"
+              id="custMail"
+              type="e-mail"
+              required
+              placeholder="Vasa e-mail adresa..."
+            />
+            <label>Broj telefona:</label>
+            <input
+              name="custPhone"
+              id="custPhone"
+              type="number"
+              required
+              placeholder="Kontakt telefon..."
+            />
+            <label>Detalji porudzbine:</label>
+            <textarea
+              name="orderDetails"
+              id="orderBody"
+              required
+              placeholder="Unesite detalje porudzbine i ostavite svoj kontakt telefon"
+            ></textarea>
+            <div class="buttons">
+              <button onclick="handleSubmit()">Potvrdi</button>
+              <button onclick="abortOrder()">Odustani</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
-    <footer>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11661.244681909999!2d22.215975559886196!3d43.05592264037126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755728f51aa33e5%3A0xed8c5a2ec874a5b0!2z0JPQvtGA0ZrQuCDQn9GA0LjRgdGY0LDQvQ!5e0!3m2!1ssr!2srs!4v1645775752254!5m2!1ssr!2srs" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+    <footer id="footer">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11661.244681909999!2d22.215975559886196!3d43.05592264037126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755728f51aa33e5%3A0xed8c5a2ec874a5b0!2z0JPQvtGA0ZrQuCDQn9GA0LjRgdGY0LDQvQ!5e0!3m2!1ssr!2srs!4v1645775752254!5m2!1ssr!2srs"
+          width="400"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </footer>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

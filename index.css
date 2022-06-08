@@ -23,6 +23,9 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
+header #orderBtn {
+  cursor: pointer;
+}
 main {
   width: 100vw;
 }
@@ -46,9 +49,60 @@ main {
   align-items: center;
   width: 60vw;
   height: 15vh;
-  background-color: white;
+  background-color: #e6e6e6;
   margin-top: 15px;
   border-radius: 7.5vh;
+}
+#order {
+  height: 59vh;
+  width: 60vw;
+  background-color: #e6e6e6;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.orderForm {
+  display: flex;
+  flex-direction: column;
+}
+.orderForm label {
+  padding: 0.5rem;
+}
+.orderForm input[type="text"],
+.orderForm input[type="e-mail"],
+.orderForm input[type="number"],
+.orderForm textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5em;
+  outline: none;
+}
+.orderForm textarea {
+  height: 180px;
+}
+
+.orderForm button {
+  margin-top: 1rem;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 30vw;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
 }
 .container {
   display: flex;
@@ -72,7 +126,8 @@ main {
 }
 .menu {
   font-size: 36px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding-left: 25px;
@@ -95,6 +150,10 @@ footer {
   justify-content: center;
   background-color: transparent;
 }
+a {
+  text-decoration: none;
+  color: bisque;
+}
 iframe {
   display: flex;
   width: 60vw;
@@ -113,10 +172,12 @@ iframe {
   }
   .products,
   .queen,
-  .about {
+  .about,
+  #order {
     width: 90vw;
   }
-  iframe, #slider{
+  iframe,
+  #slider {
     width: 90vw;
   }
 }
