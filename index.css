@@ -175,6 +175,7 @@ iframe {
   .about,
   #order {
     width: 90vw;
+    height: 59vh;
   }
   .orderForm button {
     width: 45vw;
